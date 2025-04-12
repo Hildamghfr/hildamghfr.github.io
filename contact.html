@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #fce4ec, #e0f7fa);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .contact-card {
+      background-color: #fff;
+      padding: 40px 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 500px;
+      width: 100%;
+    }
+
+    h1 {
+      color: #ec407a;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 30px;
+      color: #555;
+    }
+
+    .contact-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border: none;
+      border-radius: 30px;
+      padding: 12px 20px;
+      margin: 10px 0;
+      color: #333;
+      font-weight: 600;
+      font-size: 1em;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .contact-btn i {
+      font-size: 1.2em;
+    }
+
+    .contact-btn.email { background-color: #f8c6c8; }
+    .contact-btn.instagram { background-color: #f6c1d9; }
+    .contact-btn.linkedin { background-color: #b3d6f2; }
+    .contact-btn.whatsapp { background-color: #c1f4d0; }
+
+    .contact-btn:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+
+    .back-btn {
+      margin-top: 25px;
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #f48fb1;
+      color: #fff;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .back-btn:hover {
+      background-color: #ec407a;
+    }
+
+    @media screen and (max-width: 500px) {
+      .contact-btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="contact-card">
+    <h1>My Contact</h1>
+    <p>Silakan hubungi saya melalui media berikut:</p>
+
+    <a href="https://mail.google.com/mail/u/0/?fs=1&to=hildamaghfira9@gmail.com&tf=cm" class="contact-btn email" target="_blank">
+      <i class="fas fa-envelope"></i> Email
+    </a>
+
+    <a href="https://instagram.com/hildamghfr" class="contact-btn instagram" target="_blank">
+      <i class="fab fa-instagram"></i> Instagram
+    </a>
+
+    <a href="https://www.linkedin.com/in/hilda-maghfira-genansi" class="contact-btn linkedin" target="_blank">
+      <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+
+    <a href="https://wa.me/6285861216452" class="contact-btn whatsapp" target="_blank">
+      <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
+
+    <a href="index.html" class="back-btn">← Kembali ke Profil</a>
+
+    <footer>
+      <p style="margin-top: 15px; font-size: 0.9em; color: #888;">
+      © 2025 Hilda Maghfira Genansi | Dibuat dengan ❤ dan semangat belajar
+    </p>
+    </footer>
+  </div>
+</body>
+</html>

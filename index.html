@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Profile</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #fce4ec, #e0f7fa);
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(to right, #f8bbd0, #fbc9a9);
+      padding: 70px 20px 50px;
+      text-align: center;
+      border-radius: 0 0 40px 40px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3.2em;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    header p {
+      font-size: 1.6em;
+      font-weight: 500;
+      color: #fff;
+      margin-top: 10px;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 0 30px;
+      text-align: center;
+      animation: fadeIn 1.2s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .profile-img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+      border: 5px solid #fff;
+      margin-top: -100px;
+      background-color: white;
+    }
+
+    .bio {
+      margin-top: 30px;
+      font-size: 1.2em;
+      line-height: 1.9;
+      text-align: justify;
+    }
+
+    .quote {
+      margin-top: 25px;
+      font-style: italic;
+      font-size: 1.1em;
+      color: #666;
+    }
+
+    .info {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 60px;
+    }
+
+    .card {
+      background: #ffffffb6;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+      text-align: left;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    }
+
+    .card h2 {
+      color: #00796b;
+      margin-bottom: 15px;
+      font-size: 1.4em;
+    }
+
+    .card ul {
+      list-style: square;
+      padding-left: 20px;
+      font-size: 1.05em;
+    }
+
+    .tools {
+      margin-top: 60px;
+    }
+
+    .tools h2 {
+      color: #00796b;
+      font-size: 1.6em;
+      margin-bottom: 20px;
+    }
+
+    .tool-icons {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .tool-icons img {
+      width: 50px;
+      height: 50px;
+      transition: transform 0.3s ease;
+    }
+
+    .tool-icons img:hover {
+      transform: scale(1.2);
+    }
+
+    .gallery {
+      margin-top: 60px;
+    }
+
+    .gallery h2 {
+      font-size: 1.6em;
+      margin-bottom: 20px;
+    }
+
+    .gallery-images {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .gallery-images img {
+      width: 200px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .gallery-images img:hover {
+      transform: scale(1.05);
+    }
+
+    .btn-group {
+      margin-top: 50px;
+    }
+
+    .btn {
+      background-color: #ff80ab;
+      color: white;
+      text-decoration: none;
+      padding: 14px 30px;
+      margin: 10px 10px 0;
+      border-radius: 30px;
+      font-size: 1.1em;
+      font-weight: 600;
+      transition: background 0.3s ease, transform 0.2s;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .btn:hover {
+      background-color: #ec407a;
+      transform: translateY(-2px);
+    }
+
+    footer {
+      margin-top: 80px;
+      background-color: #f8bbd0;
+      padding: 30px;
+      text-align: center;
+      color: #fff;
+      border-radius: 40px 40px 0 0;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      .bio {
+        text-align: center;
+      }
+
+      .profile-img {
+        width: 160px;
+        height: 160px;
+      }
+
+      .tool-icons {
+        gap: 20px;
+      }
+
+      .gallery-images img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hilda Maghfira Genansi</h1>
+    <p>Mahasiswi Sistem Informasi | Web Developer</p>
+  </header>
+
+  <section>
+    <img src="profil web.jpg" alt="Hilda Maghfira Genansi" class="profile-img" />
+
+    <div class="bio">
+      <p>
+        Halo! Aku <strong>Hilda</strong>, mahasiswi Sistem Informasi di ITPLN. Saat ini aku lagi belajar membuat website. 
+        Seru banget ngulik coding dan ngelihat hasilnya jadi tampilan yang bisa berinteraksi langsung dengan user!
+      </p>
+      <p>
+        Selain ngoding, aku juga suka <strong>baca buku, masak, main badminton</strong>, dan kadang jalan-jalan buat refreshing. 
+      </p>
+    </div>
+
+    <p class="quote">✨ "Belajar coding itu seperti belajar bicara dengan masa depan." ✨</p>
+
+    <div class="info">
+      <div class="card">
+        <h2>💻 Skills</h2>
+        <ul>
+          <li>HTML dan CSS (dasar)</li>
+          <li>Microsoft Access</li>
+          <li>Microsoft Excel</li>
+          <li>Microsoft Word</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>🎯 Interests</h2>
+        <ul>
+          <li>Membaca & Eksplor Buku Baru</li>
+          <li>Memasak</li>
+          <li>Badminton</li>
+          <li>Jalan-jalan & Foto-foto</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tools">
+      <h2>🧰 My Tools</h2>
+      <div class="tool-icons">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+      </div>
+    </div>
+
+    <div class="btn-group">
+      <a href="cv.html" class="btn">Lihat CV</a>
+      <a href="contact.html" class="btn">Hubungi Saya</a>
+      <a href="story.html" class="btn">Tentang Saya</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Hilda Maghfira Genansi | Dibuat dengan ❤ dan semangat belajar
+  </footer>
+</body>
+</html>

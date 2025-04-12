@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Story</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #fce4ec, #e0f7fa);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    .story-container {
+      background: #fff;
+      border-radius: 20px;
+      padding: 30px;
+      max-width: 1000px;
+      width: 100%;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #ec407a;
+      margin-bottom: 30px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .photo-card {
+      background: #fce4ec;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .photo-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .photo-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .caption {
+      padding: 15px;
+      text-align: center;
+      font-size: 0.95em;
+      color: #555;
+    }
+
+    .back-btn {
+      display: block;
+      margin: 40px auto 0;
+      width: fit-content;
+      padding: 12px 25px;
+      background-color: #f48fb1;
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .back-btn:hover {
+      background-color: #ec407a;
+    }
+  </style>
+</head>
+<body>
+  <div class="story-container">
+    <h1>Galeri Kegiatan Ku</h1>
+    <div class="gallery">
+
+      <div class="photo-card">
+        <img src="sharing section5.jpg" alt="Seminar Digital Teaching">
+        <div class="caption">Seminar Nasional "Digital Media for Teaching Strategies" </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="istiqlal with bestie.jpg" alt="Istiqlal">
+        <div class="caption">Istiqlal With bestie </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="famget1.jpg" alt="Famghet GSM">
+        <div class="caption">Famghet GSM (Gerakan Sahabat Mengajar) </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="Girls .jpg" alt="Girls">
+        <div class="caption">Girls </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="Gsm Oprec.jpg" alt="Gsm oprec">
+        <div class="caption">GSM Oprec </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="BPA 2.jpg" alt="Kampus Fair">
+        <div class="caption">Kampus Fair SMAN 94 Jakarta </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="survei baksos.jpg" alt="survei baksos">
+        <div class="caption">Survei Lokasi Bakti Sosial FTEN </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="BI with besty.jpg" alt="BI">
+        <div class="caption">Bank Indonesia </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="baksos3.jpg" alt="Baksos FTEN 2024">
+        <div class="caption">Kegiatan Bakti Sosial FTEN </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="asbuners.jpg" alt="asbuners">
+        <div class="caption">asbuners </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="CFD.jpg" alt="CFD">
+        <div class="caption">Car Free Day </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="Seminar Telkom.jpg" alt="Seminar Telkom">
+        <div class="caption">Seminar Nasional "Living in Telkom" </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="pemira.jpg" alt="pemira">
+        <div class="caption">Pemira </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="lkmm1.jpg" alt="LKMM">
+        <div class="caption">Latihan Keterampilan Manajemen Mahasiswa </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="industri visit.jpg" alt="industri visit">
+        <div class="caption">Visit Industri (Interview Enterprise) </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="Bukber Himasi.jpg" alt="bukber himasi">
+        <div class="caption">Bukber Himasi </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="ekoven.jpg" alt="ekoven">
+        <div class="caption">Ekoven GSM </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="finish ldkm.jpg" alt="finish ldkm">
+        <div class="caption">Finish LDKM </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="GSM.jpg" alt="gsm">
+        <div class="caption">Gerakan Sahabat Mengajar </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="praktikum.jpg" alt="praktikum">
+        <div class="caption">Praktikum </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="FTEN GSM.jpg" alt="ften gsm">
+        <div class="caption">With Kating </div>
+      </div>
+
+    </div>
+    <a href="index.html" class="back-btn">← Kembali ke Profil</a>
+
+    <footer>
+      <p style="margin-top: 15px; font-size: 0.9em; color: #888;">
+        © 2025 Hilda Maghfira Genansi | Dibuat dengan ❤ dan semangat belajar
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
